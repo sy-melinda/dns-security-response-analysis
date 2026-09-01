@@ -132,3 +132,40 @@ The `dig` command was used to inspect the final DNS response.
 The terminal output confirmed that the DNS response contained the expected Question, Authority, and Additional sections.
 
 This final step demonstrated that the DNS response configured in Netwag was successfully reflected in the output observed by the client.
+
+## Security Significance
+
+DNS is an important service because systems rely on it to resolve domain names into network addresses.
+
+This lab demonstrates how DNS queries and responses can be inspected and how manipulated DNS responses may affect the information received by a client.
+
+Understanding this behavior is important for detecting suspicious DNS activity and protecting network infrastructure.
+
+## Defensive Measures
+
+Potential defensive measures include:
+
+- Using trusted DNS resolvers
+- Monitoring DNS traffic
+- Reviewing unexpected DNS responses
+- Maintaining DNS logs
+- Applying network segmentation
+- Using DNSSEC where appropriate
+- Monitoring unauthorized DNS configuration changes
+
+## Skills 
+
+- DNS fundamentals
+- Linux Networking
+- `dig`
+- Wireshark packet analysis
+- Netwag
+- DNS packet inspection
+- Network security analysis
+- Technical documentation
+
+## Ethical Use
+
+This project was conducted in an isolated educational lab environment using systems authorized for testing.
+The techniques documented in this repository are intended for cybersecurity education, defensive analysis, and security research.
+
