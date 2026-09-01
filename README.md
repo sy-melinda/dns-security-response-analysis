@@ -24,3 +24,23 @@ Before changing the DNS configuration, I ran the `dig` command to observe the or
 ### Analysis
 
 This output provides a baseline for comparison before modifying the configured DNS resolver.
+
+## 2. DNS Nameserver Configuration
+
+The DNS nameserver setting was modified in the network interface configuration file.
+
+![DNS Nameserver Configuration](02-interface-dns-nameserver-config.png)
+
+### Analysis
+
+This configuration change determines which DNS resolver the client uses when sending DNS queries.
+
+## 3. DNS Query After Configuration Change
+
+After modifying the DNS nameserver configuration, I ran the `dig` command again to observe the updated DNS behavior.
+
+![DNS Query After Configuration](03-dig-after-dns-change.png)
+
+### Analysis
+
+The result was used to verify that the DNS configuration change had taken effect and that the client was using the configured resolver.
